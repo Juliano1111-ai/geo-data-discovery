@@ -10,9 +10,9 @@ it, the answer often comes back as confident links that do not resolve — which
 for a paper, a proposal, or a course, is worse than no answer at all.
 
 This documentation describes the method I use to get past that, written down and
-made reproducible. It keeps what a language model is genuinely good at — expanding
+made reproducible. It keeps what a language model is genuinely good at, expanding
 a query into the right vocabulary, routing it to the right infrastructure, and
-reasoning over a forensic trail — and removes the one thing it cannot be trusted
+reasoning over a forensic trail, and removes the one thing it cannot be trusted
 to do: decide that a link is good. **No link enters the verified output unless a
 script has resolved it and confirmed the response is the data that was asked for,
 in this run.** Everything else in the design follows from that single rule.
