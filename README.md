@@ -1,4 +1,4 @@
-# geo-data-discovery
+# Geoscience data discovery tool
 
 *Find Earth-science data, verify it actually exists, and — when it doesn't sit in a public archive — track it down. With a step that stops fabricated links cold.*
 
