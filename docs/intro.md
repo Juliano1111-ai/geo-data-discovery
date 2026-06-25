@@ -1,15 +1,23 @@
-# geo-data-discovery
+# Geoscience data discovery
 
-**Juliano Ramanantsoa** — University of Bergen / Bjerknes Centre for Climate Research
+**Juliano Ramanantsoa** — Department of Earth Science, University of Bergen · ORCID [0000-0003-0831-2802](https://orcid.org/0000-0003-0831-2802)
 
-This is the documentation for a method I use and trust: find Earth-science data,
-confirm it actually exists, and — when it is not in a public archive — track it
-down, while refusing to ever present a link that has not been resolved this run.
+Finding data in the Earth sciences is rarely the clean step it ought to be. The
+dataset you need is real, but the downloadable product is scattered across
+infrastructures, sits behind a portal, is described only in a project deliverable,
+or was simply never archived. And when you ask a language model where to download
+it, the answer often comes back as confident links that do not resolve — which,
+for a paper, a proposal, or a course, is worse than no answer at all.
+
+This documentation describes the method I use to get past that, written down and
+made reproducible. It keeps what a language model is genuinely good at — expanding
+a query into the right vocabulary, routing it to the right infrastructure, and
+reasoning over a forensic trail — and removes the one thing it cannot be trusted
+to do: decide that a link is good. **No link enters the verified output unless a
+script has resolved it and confirmed the response is the data that was asked for,
+in this run.** Everything else in the design follows from that single rule.
 
 The page that follows is a complete, tested walk-through on a real example. The
 software itself, the playbooks, and ready-to-run Python and Colab entry points are
 in the [GitHub repository](https://github.com/Juliano1111-ai/geo-data-discovery).
 
-The principle the whole method rests on is simple: a language model can expand a
-query and reason over a trail, but it does not get to decide that a download link
-is good. Only a script that resolves the link and checks the response can do that.
