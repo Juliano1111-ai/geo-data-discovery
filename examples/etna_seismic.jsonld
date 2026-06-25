@@ -1,0 +1,39 @@
+[
+  {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "Raw seismic waveforms (miniSEED) - INGV network IV, Mount Etna, 2024",
+    "description": "Continuous raw waveform data from INGV network IV stations on Mount Etna via the FDSN dataselect service (example: broadband HH? from summit station ESLN). On an open network this endpoint returns non-zero miniSEED bytes, which is what promotes it to DATA_AVAILABLE.",
+    "url": "https://webservices.ingv.it/fdsnws/dataselect/1/query?network=IV&station=ESLN&location=*&channel=HH?&starttime=2024-01-01T00:00:00&endtime=2024-01-01T01:00:00",
+    "keywords": ["seismic", "FDSN", "miniSEED", "raw waveform", "INGV", "Etna"],
+    "publisher": {"@type": "Organization", "name": "Istituto Nazionale di Geofisica e Vulcanologia (INGV) / Osservatorio Etneo"},
+    "license": "open data via EIDA (per network policy)",
+    "isAccessibleForFree": true,
+    "temporalCoverage": "2024-01-01/2024-12-31",
+    "spatialCoverage": {"@type": "Place", "geo": {"@type": "GeoShape", "box": "37.6 14.8 37.9 15.2"}},
+    "distribution": [{"@type": "DataDownload", "contentUrl": "https://webservices.ingv.it/fdsnws/dataselect/1/query?network=IV&station=ESLN&location=*&channel=HH?&starttime=2024-01-01T00:00:00&endtime=2024-01-01T01:00:00", "encodingFormat": "application/vnd.fdsn.mseed"}],
+    "resourceRole": "actual_data",
+    "dataStatus": "DATA_AVAILABLE",
+    "accessProtocol": "FDSN",
+    "searchTier": 1,
+    "verification": {"ok": true, "http_status": 200, "validation_level": 4, "validation_method": "miniseed-nonzero-bytes", "note": "validated on an open network; see examples/test_etna_pipeline.py"}
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "INGV (network IV) seismic station inventory - Mount Etna, 2024",
+    "description": "FDSN station-level inventory for network IV within the Etna summit box. This is metadata evidence (proof of what exists), NOT waveform data - hence resourceRole = metadata_evidence and dataStatus = METADATA_ONLY. Known summit stations include ESLN (Serra La Nave) and EBEL (Belvedere).",
+    "url": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&minlatitude=37.6&maxlatitude=37.9&minlongitude=14.8&maxlongitude=15.2&starttime=2024-01-01&endtime=2024-12-31&level=station&format=text",
+    "keywords": ["seismic", "FDSN", "station metadata", "INGV", "network IV", "Etna"],
+    "publisher": {"@type": "Organization", "name": "Istituto Nazionale di Geofisica e Vulcanologia (INGV) / Osservatorio Etneo"},
+    "isAccessibleForFree": false,
+    "temporalCoverage": "2024-01-01/2024-12-31",
+    "spatialCoverage": {"@type": "Place", "geo": {"@type": "GeoShape", "box": "37.6 14.8 37.9 15.2"}},
+    "distribution": [{"@type": "DataDownload", "contentUrl": "https://webservices.ingv.it/fdsnws/station/1/query?network=IV&minlatitude=37.6&maxlatitude=37.9&minlongitude=14.8&maxlongitude=15.2&starttime=2024-01-01&endtime=2024-12-31&level=station&format=text", "encodingFormat": "text/plain; fdsn-station"}],
+    "resourceRole": "metadata_evidence",
+    "dataStatus": "METADATA_ONLY",
+    "accessProtocol": "FDSN",
+    "searchTier": 1,
+    "verification": {"ok": true, "http_status": 200, "validation_level": 3, "validation_method": "fdsn-text-nonempty"}
+  }
+]

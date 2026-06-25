@@ -1,0 +1,38 @@
+[
+  {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "SFER (San Fernando, Cadiz) GNSS daily position time series - Nevada Geodetic Laboratory",
+    "description": "Daily east/north/up position time series for IGN/ERGNSS reference station SFER, processed by the Nevada Geodetic Laboratory (PPP). A directly downloadable tenv3 file -> resourceRole = actual_data.",
+    "url": "https://geodesy.unr.edu/gps_timeseries/tenv3/IGS14/SFER.tenv3",
+    "keywords": ["ground motion", "GNSS position time series", "tectonic displacement", "Andalusia", "SFER"],
+    "publisher": {"@type": "Organization", "name": "Nevada Geodetic Laboratory, University of Nevada, Reno"},
+    "isAccessibleForFree": true,
+    "temporalCoverage": "2020-01-01/2026-12-31",
+    "spatialCoverage": {"@type": "Place", "geo": {"@type": "GeoShape", "box": "36.0 -7.6 38.8 -1.6"}},
+    "distribution": [{"@type": "DataDownload", "contentUrl": "https://geodesy.unr.edu/gps_timeseries/tenv3/IGS14/SFER.tenv3", "encodingFormat": "text/plain; tenv3"}],
+    "resourceRole": "actual_data",
+    "dataStatus": "DATA_AVAILABLE",
+    "accessProtocol": "HTTP file",
+    "searchTier": 1,
+    "verification": {"ok": true, "http_status": 200, "validation_level": 3, "validation_method": "tenv3-rows-nonempty", "note": "IGS14 final frozen 2024-08-24; IGS20 for newest epochs"}
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "EPOS-GNSS Spanish ERGNSS products (national node: CNIG/IGN)",
+    "description": "Authoritative European GNSS data and products chain for Spain via the EPOS-GNSS Thematic Core Service; national node is CNIG (Instituto Geografico Nacional). Catalogue/portal entry point -> resourceRole = catalogue_record.",
+    "url": "https://www.epos-eu.org/tcs/gnss-data-and-products",
+    "keywords": ["EPOS", "GNSS", "ERGNSS", "velocity field", "Spain"],
+    "publisher": {"@type": "Organization", "name": "EPOS-GNSS / CNIG - Instituto Geografico Nacional"},
+    "isAccessibleForFree": false,
+    "temporalCoverage": "2020-01-01/2026-12-31",
+    "spatialCoverage": {"@type": "Place", "geo": {"@type": "GeoShape", "box": "36.0 -7.6 38.8 -1.6"}},
+    "distribution": [{"@type": "DataDownload", "contentUrl": "https://www.epos-eu.org/tcs/gnss-data-and-products", "encodingFormat": "text/html"}],
+    "resourceRole": "catalogue_record",
+    "dataStatus": "METADATA_ONLY",
+    "accessProtocol": "portal",
+    "searchTier": 1,
+    "verification": {"ok": true, "http_status": 200, "validation_level": 2, "validation_method": "resolved-content-present", "note": "access via EPOS-GNSS gateway; contact general@gnss-epos.eu"}
+  }
+]

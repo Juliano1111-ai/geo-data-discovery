@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/geo-data-discovery/discovery_output.schema.json",
+  "title": "geo-data-discovery verified catalogue item",
+  "description": "schema.org/Dataset extended with honesty fields. Author: H.J.D. Ramanantsoa, 2026. MIT License.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["@context", "@type", "name", "resourceRole", "dataStatus", "distribution"],
+    "properties": {
+      "@context": {"const": "https://schema.org/"},
+      "@type": {"const": "Dataset"},
+      "name": {"type": "string"},
+      "resourceRole": {"enum": ["actual_data","metadata_evidence","availability_evidence","catalogue_record","forensic_evidence","proxy_data","restricted_lead","unresolved_lead","test_fixture"]},
+      "dataStatus": {"enum": ["DATA_AVAILABLE","METADATA_ONLY","RESTRICTED","LINK_ONLY","UNRESOLVED"]},
+      "accessProtocol": {"type": ["string","null"]},
+      "isAccessibleForFree": {"type": "boolean"},
+      "distribution": {"type": "array"},
+      "verification": {"type": "object"}
+    }
+  }
+}

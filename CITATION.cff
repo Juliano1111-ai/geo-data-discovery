@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "geo-data-discovery: verified FAIR data discovery and dark-data forensics for the geosciences"
+abstract: >-
+  A two-mode tool that finds directly-downloadable Earth, marine, atmospheric and
+  solid-Earth science data with machine-verified access links and schema.org / DCAT
+  metadata, and runs a forensic trail (academic provenance, data steward, proxy
+  datasets) when data is not in standard infrastructures. Enforces a verification
+  gate that prevents hallucinated download links. Distributed as a Claude Skill and
+  a standalone Python engine.
+type: software
+authors:
+  - family-names: Ramanantsoa
+    given-names: Juliano
+    orcid: "https://orcid.org/0000-0003-0831-2802"
+    affiliation: "Department of Earth Science, University of Bergen; Bjerknes Centre for Climate Research"
+version: 1.0.1
+date-released: "2026-06-24"
+license: MIT
+keywords:
+  - FAIR data
+  - data discovery
+  - geoscience
+  - GNSS
+  - seismology
+  - schema.org
+  - DCAT
+  - research data infrastructure
+repository-code: "https://github.com/Juliano1111-ai/geo-data-discovery"

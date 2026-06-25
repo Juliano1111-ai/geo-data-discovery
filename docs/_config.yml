@@ -1,0 +1,13 @@
+title: geo-data-discovery
+author: Juliano Ramanantsoa
+copyright: "2026, Juliano Ramanantsoa — MIT License"
+only_build_toc_files: true
+execute:
+  execute_notebooks: "off"   # the notebook hits live services; don't run it at doc-build time
+repository:
+  url: https://github.com/Juliano1111-ai/geo-data-discovery
+  branch: main
+  path_to_book: docs
+html:
+  use_repository_button: true
+  use_issues_button: true

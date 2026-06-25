@@ -1,0 +1,4 @@
+format: jb-book
+root: intro
+chapters:
+  - file: finding_geoscience_data
