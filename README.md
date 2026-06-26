@@ -9,9 +9,9 @@
 
 ## Why this exists
 
-I have spent years working with research-data infrastructure across European geoscience, and one frustration is constant: the data you need is real, but finding the downloadable product means crossing a dozen archives — and sometimes the data isn't openly published at all. When I ask a language model where to download something, it answers with clean, confident links that don't resolve. That is not a small annoyance. For a paper, a proposal, or a course, a plausible-looking dead link is worse than no answer.
+I have spent years working with research-data infrastructure across European geoscience, and one frustration is constant: the data you need is real, but finding the downloadable product means crossing a dozen archives, and sometimes the data isn't openly published at all. When I ask a language model where to download something, it answers with clean, confident links that don't resolve. That is not a small annoyance. For a paper, a proposal, or a course, a plausible-looking dead link is worse than no answer.
 
-So I wrote down the method I actually trust, and I made the part that must never fail deterministic. A model is good at expanding a query, routing it to the right infrastructure, and reasoning over a forensic trail — and I let it do exactly that. What I never let it do is decide that a link is good. **A link reaches the output only after a script has resolved it and confirmed the response is the data I asked for.** That single boundary is what turns a clever demo into something I am willing to put my name on.
+So I wrote down the method I actually trust, and I made the part that must never fail deterministic. A model is good at expanding a query, routing it to the right infrastructure, and reasoning over a forensic trail, and I let it do exactly that. What I never let it do is decide that a link is good. **A link reaches the output only after a script has resolved it and confirmed the response is the data I asked for.** That single boundary is what turns a clever demo into something I am willing to put my name on.
 
 This repository is that method. It runs as plain Python, as a Colab notebook, and as a Claude Skill, so it fits whatever you already use.
 
