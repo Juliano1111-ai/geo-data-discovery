@@ -405,9 +405,9 @@ def fdsn_event_candidates(qp: QueryPlan) -> list[Candidate]:
 
 
 
+def cordis_leads(qp: QueryPlan, acronym: Optional[str] = None) -> list[Candidate]:
     """Tier 3: surface EU project-deliverable search leads (CORDIS / DMPs / WPs).
     These are forensic leads, not data — they point to where data are described."""
-    region = ""
     tag = acronym or "[project acronym]"
     queries = [
         f'site:cordis.europa.eu "{tag}" dataset',
