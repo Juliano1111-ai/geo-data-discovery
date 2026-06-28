@@ -7,7 +7,7 @@
 
 ---
 
-## Why?
+## Motive and narrative
 
 I have spent years working with data and research-data infrastructure across European geoscience, and one frustration is constant: the data you need is real, but finding the downloadable product means crossing a dozen archives — and sometimes the data isn't openly published at all. When I ask a language model where to download something, it answers with clean, confident links that don't resolve. That is not a small annoyance. For a paper, a proposal, or a course, a plausible-looking dead link is worse than no answer.
 
