@@ -13,7 +13,7 @@ I have spent years working with research-data infrastructure across European geo
 
 So I wrote down the method I actually trust, and I made the part that must never fail deterministic. A model is good at expanding a query, routing it to the right infrastructure, and reasoning over a forensic trail — and I let it do exactly that. What I never let it do is decide that a link is good. **A link reaches the output only after a script has resolved it and confirmed the response is the data I asked for.** That single boundary is what turns a clever demo into something I am willing to put my name on.
 
-This repository is that method. It runs as plain Python, as a Colab notebook, and as a Claude Skill, so it fits whatever you already use.
+This repository is that method. It runs as plain Python, as a Colab notebook, and as a Claude Skill (compatible to other GAI), so it fits whatever you already use.
 
 ## Install and run
 
